@@ -30,7 +30,7 @@ public class SortStack {
                 st.push(Integer.parseInt(br.readLine()));
             }
             sortStack(st);
-        while(!st.isEmpty()){
+            while(!st.isEmpty()){
             System.out.println(st.pop()+" ");
         }
 

@@ -36,6 +36,7 @@ public class MaxFixedSize {
             System.out.print(ii+" ");
         }
         System.out.println();
+        sc.close();
     }
 }
 

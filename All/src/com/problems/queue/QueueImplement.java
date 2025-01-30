@@ -33,6 +33,8 @@ public class QueueImplement {
         q.addData(1);
         q.addData(2);
         q.addData(3);
+        q.addData(12);
+        q.removeData();
         q.addData(4);
         q.addData(5);
         q.removeData();
