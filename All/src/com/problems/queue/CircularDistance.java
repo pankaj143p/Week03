@@ -1,28 +1,22 @@
 package src.com.problems.queue;
-
-import java.util.LinkedList;
-import java.util.Queue;
 import java.util.Scanner;
 
 public class CircularDistance {
     public static int solution(int dis[], int pet[], int n){
         // int ans=0;
-        Queue<int []> q =new LinkedList<int[]>();
-        for(int i=0; i<n; i++){
-            q.offer(new int[] {dis[i], pet[i]});
-        }
-        int sum=0, diff=0;
-        while(!q.isEmpty()){
-            int arr[]=q.poll();
-            int d=arr[0];
-            int p=arr[1];
-            sum+=d;
-            diff=sum-p;
-            if(diff>=0){
-                return q.size();
+        int current=0;
+        int total=0;
+        int start=0; 
+        for(int i=0;i<pet.length;i++){
+            current+=pet[i]-dis[i];
+            total+=pet[i]-dis[i]; 
+            if(current<0){
+                current=0;
+                start=i+1;
             }
-        }
-        return -1;
+        } 
+      return total<0 ? -1 : start;
+
     }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
