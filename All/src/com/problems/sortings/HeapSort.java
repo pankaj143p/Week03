@@ -27,9 +27,15 @@ public class HeapSort {
         for(int i=start; i>=0; i--){
             heapSort(arr,i,n);
         }
+        for(int i=n-1; i>=0; i--){
+            int temp=arr[i];
+            arr[i]=arr[0];
+            arr[0]=temp;
+            heapSort(arr, 0, i);
+        } 
     }
     public static void printArr(int arr[]){
-        System.out.println("Heap for given array : ");
+        System.out.println("Sorted Heap for given array : ");
                 for(int ii : arr){
                     System.out.print(ii+" ");
                 }
