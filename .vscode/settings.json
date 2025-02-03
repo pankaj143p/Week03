@@ -1,0 +1,9 @@
+{
+    "java.project.sourcePaths": [
+        "LinkedList",
+        "All/src/com/linkedlist/student",
+        "All"
+    ],
+    "java.project.referencedLibraries": [],
+    "java.debug.settings.onBuildFailureProceed": true
+}
