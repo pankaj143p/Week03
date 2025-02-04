@@ -6,10 +6,9 @@ class Reverse{
     private static StringBuilder reverse(String str){
         return new StringBuilder(str).reverse();
     }
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         String str=br.readLine();
         System.out.println("String after reverse : "+reverse(str));
-
     }
 }
