@@ -1,4 +1,4 @@
-package src.com.probles.linear;
+package src.com.problems;
 import java.util.Scanner;
 
 class SearchInSentence{

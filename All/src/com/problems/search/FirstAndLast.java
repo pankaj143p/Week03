@@ -2,7 +2,7 @@ package src.com.problems.search;
 
 import java.util.*;
 class FirstAndLast{
-    public int occuranceFind(int[] nums, int target, boolean isFirst) {
+    public static int occuranceFind(int[] nums, int target, boolean isFirst) {
         int idx=-1;
         int i=0,j=nums.length-1;
         while(i<=j){
