@@ -2,7 +2,7 @@ package src.com.problems.stringbuilder;
 import java.util.*;
 class RemoveDuplicate{
 
-    // function for remove duplicate in a string 
+    // function for remove duplicate in a string
     private static StringBuilder removeDuplicate(String str){
         HashSet<Character> hs = new HashSet<>();
         StringBuilder sb = new StringBuilder();
