@@ -3,6 +3,8 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
 class Reverse{
+
+    // function for reverse string using string builder
     private static StringBuilder reverse(String str){
         return new StringBuilder(str).reverse();
     }

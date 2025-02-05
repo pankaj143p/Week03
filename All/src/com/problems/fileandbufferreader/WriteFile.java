@@ -5,7 +5,7 @@ public class WriteToFile {
     public static void main(String[] args) {
         try {
             FileWriter myWriter = new FileWriter("myfile.txt");
-            for(int i=0; i<3000; i++) {
+            for(int i=0; i<2000000; i++) {
                 myWriter.write("Files in Java might be tricky, but it is fun enough!");
             }
             myWriter.close();

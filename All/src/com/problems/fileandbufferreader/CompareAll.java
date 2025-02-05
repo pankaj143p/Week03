@@ -28,6 +28,14 @@ public class CompareAll {
         endTime = System.nanoTime();
         long sfTime = endTime - startTime;
         System.out.println("Time taken by StringBuffer: " + sfTime + " nanoseconds");
+        // check which is faster
+        if(sfTime<sbTime){
+            System.out.println("stringbuffer takes less time : ");
+        }else if(sfTime>sbTime){
+            System.out.println("stringbuilder takes less time : ");
+        }else{
+            System.out.println("both takes equals time : ");
+        }
         // Step 2: FileReader and InputStreamReader Word Count Comparison
         String filePath = "myfile.txt"; // Replace with the path to your large file (100MB)
         // Reading file using FileReader
@@ -60,8 +68,8 @@ public class CompareAll {
         String line;
         int wordCount = 0;
         while ((line = br.readLine()) != null) {
-            String[] words = line.split("\\s+"); // Split by any whitespace
-            wordCount += 1;
+            String[] words = line.split("\\s+");
+            wordCount+=words.length;
         }
         // close bufferedreader
         br.close();
@@ -78,8 +86,8 @@ public class CompareAll {
         int wordCount = 0;
 
         while ((line = br.readLine()) != null) {
-            String[] words = line.split("\\s+"); // Split by any whitespace
-            wordCount += 1;
+            String[] words = line.split("\\s+");
+            wordCount += words.length;
         }
 
         br.close();
