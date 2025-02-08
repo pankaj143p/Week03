@@ -18,7 +18,7 @@ public class SearchComparison {
             int m = l + (r - l) / 2;
             if (arr[m] == target) return m;
             if (arr[m] < target) l = m + 1;
-            else r = m - 1;
+            else r = m - 1;4
         }
         return -1;
     }
